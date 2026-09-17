@@ -4,43 +4,43 @@
       "semester": "Fall 2026",
       "members": [
         {
-          "name": "Mehul Patwari",
-          "role": "President",
-          "linkedin": "https://www.linkedin.com/in/mehulpatwari/"
-        },
-        {
           "name": "Naina Singh",
-          "role": "President",
+          "role": "Co-President",
           "linkedin": "https://www.linkedin.com/in/nainaaz/"
         },
         {
+          "name": "Mehul Patwari",
+          "role": "Co-President",
+          "linkedin": "https://www.linkedin.com/in/mehulpatwari/"
+        },
+        {
           "name": "Duretti Hordofaa",
-          "role": "Vice President & Newsletter Chair",
+          "role": "Vice President",
           "linkedin": "https://www.linkedin.com/in/duretti-hordofaa/"
         },
         {
-          "name": "Supriyaa Hejib",
-          "role": "Poster & Instagram Chair",
-          "linkedin": "https://www.linkedin.com/in/supriyaa-hejib/"
-        },
-        {
           "name": "Sammie Le",
-          "role": "Instagram Chair",
+          "role": "Design Chair",
           "linkedin": "https://www.linkedin.com/in/sammiele/"
         },
         {
-          "name": "Devansh Mamoria",
-          "role": "Advertising Chair"
+          "name": "Tanishq Saria",
+          "role": "Logistics Coordinator",
+          "linkedin": "https://www.linkedin.com/in/tanishq-s/"
         },
         {
           "name": "Mori Finlayson-Johnecheck",
-          "role": "Website Chair",
+          "role": "Tech Chair",
           "linkedin": "https://www.linkedin.com/in/mori-fj/"
         },
         {
-          "name": "Alisha Srivastava",
-          "role": "President Emeritus",
-          "linkedin": "https://www.linkedin.com/in/alishasrivastava/"
+          "name": "Devansh Mamoria",
+          "role": "Advertisement Coordinator"
+        },
+        {
+          "name": "Supriyaa Hejib",
+          "role": "Advertisement Coordinator",
+          "linkedin": "https://www.linkedin.com/in/supriyaa-hejib/"
         }
       ]
     },
