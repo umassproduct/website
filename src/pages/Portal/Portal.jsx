@@ -49,7 +49,7 @@ export default function Portal() {
           <p className="portal__teaser-text">Alumni contact info · recruiter connections · exclusive roles — coming soon.</p>
         </div>
         <div className="portal__resources">
-          <a className="portal__resource-card" href="https://discord.gg/umassproduct" target="_blank" rel="noopener noreferrer">
+          <a className="portal__resource-card" href="https://discord.gg/xFshvBAuzw" target="_blank" rel="noopener noreferrer">
             <span className="portal__resource-icon">💬</span>
             <p className="portal__resource-title">Discord</p>
             <p className="portal__resource-desc">Join the community</p>

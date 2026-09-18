@@ -4,7 +4,7 @@ export default function SocialLinks() {
   return (
     <div className="social-links">
       <a
-        href="https://discord.gg/sfUgPdH6"
+        href="https://discord.gg/xFshvBAuzw"
         className="social-links__link"
         target="_blank"
         rel="noopener noreferrer"
