@@ -143,8 +143,8 @@ export default function ForStudents() {
           <div className="for-students__poster-container">
             <RedBubble className="for-students__poster-bubble">
               <div className="for-students__poster for-students__poster--placeholder">
-                <p>Fall 2026 kicks off September 16th.</p>
-                <p>7-8 PM — location TBA. Flyer coming soon.</p>
+                <p>Product 101: Build Your MVP</p>
+                <p>September 30th, 7-8 PM — ILC S311.</p>
               </div>
             </RedBubble>
           </div>

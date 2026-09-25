@@ -1,17 +1,17 @@
 {
   "semester": "fall",
   "year": 2026,
-  "meetingInfo": "every wednesday, 7-8 pm",
+  "meetingInfo": "every other wednesday, 7-8 pm",
   "events": [
     {
-      "title": "First Meeting",
+      "title": "Product 101: What's the Problem?",
       "date": "September 16",
-      "note": "location TBA"
+      "note": "ILC S311"
     },
     {
-      "title": "More meetings coming soon",
-      "date": "TBA",
-      "note": ""
+      "title": "Product 101: Build Your MVP",
+      "date": "September 30",
+      "note": "ILC S311"
     }
   ]
 }

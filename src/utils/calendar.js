@@ -53,7 +53,7 @@ export function generateICSFile(events, year, meetingTime = '7-8 pm') {
       `DTEND:${dateStr}T${endTime}`,
       `SUMMARY:${event.title}`,
       `DESCRIPTION:${description}`,
-      'LOCATION:TBD',
+      'LOCATION:ILC S311',
       'STATUS:CONFIRMED',
       'END:VEVENT'
     )
