@@ -142,10 +142,11 @@ export default function ForStudents() {
         <ScrollFadeIn>
           <div className="for-students__poster-container">
             <RedBubble className="for-students__poster-bubble">
-              <div className="for-students__poster for-students__poster--placeholder">
-                <p>Product 101: Build Your MVP</p>
-                <p>September 30th, 7-8 PM — ILC S311.</p>
-              </div>
+              <img
+                className="for-students__poster"
+                src="/images/meetings/0930 - Build Your MVP.png"
+                alt="Product 101: Build Your MVP, Wednesday September 30 at 7 PM in ILC S311"
+              />
             </RedBubble>
           </div>
         </ScrollFadeIn>
