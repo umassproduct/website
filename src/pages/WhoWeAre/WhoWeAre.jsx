@@ -36,7 +36,7 @@ export default function WhoWeAre() {
           <ScrollFadeIn>
             <p className="who-we-are__meetings">
               <span className="who-we-are__meetings-label">Meetings:</span>{' '}
-              <span className="who-we-are__meetings-time">Every Wednesday 7-8 PM · Location TBA. First meeting September 16th!</span>
+              <span className="who-we-are__meetings-time">Every other Wednesday 7-8 PM · ILC S311</span>
             </p>
           </ScrollFadeIn>
 

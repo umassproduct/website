@@ -136,7 +136,7 @@ export default function Home() {
     <div className="home">
       <div className="home__alert">
         <span className="home__alert-text">
-          🚨 SECOND MEETING: PRODUCT 101: BUILD YOUR MVP — SEPTEMBER 30TH, 7-8 PM, ILC S311
+          🚨 TONIGHT: PRODUCT ROUNDTABLE — OCTOBER 14TH, 7-8 PM, ILC S311
         </span>
       </div>
 
