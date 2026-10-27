@@ -133,6 +133,23 @@
   margin: 0;
 }
 
+.for-students__poster-blurb {
+  margin-top: var(--space-lg);
+  padding: 0 var(--space-md);
+  text-align: center;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.for-students__poster-blurb p {
+  margin: 0 0 var(--space-xs);
+}
+
+.for-students__poster-blurb p:first-child {
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+}
+
 /* Step 2: Newsletter */
 .for-students__newsletter-container {
   max-width: 700px;

@@ -142,11 +142,21 @@ export default function ForStudents() {
         <ScrollFadeIn>
           <div className="for-students__poster-container">
             <RedBubble className="for-students__poster-bubble">
-              <div className="for-students__poster for-students__poster--placeholder">
-                <p>Product Graveyard</p>
-                <p>October 28th, 7-8 PM — ILC S311.</p>
-              </div>
+              <img
+                className="for-students__poster"
+                src="/images/meetings/1028 - Product Graveyard.webp"
+                alt="Product Graveyard, Wednesday October 28 at 7 PM in ILC S311"
+              />
             </RedBubble>
+            <div className="for-students__poster-blurb">
+              <p>If you could resurrect one dead product, which would it be?</p>
+              <p>
+                At Product Graveyard, we look at the products that flopped, faded out, or got left
+                behind, and decide if any deserve a second life. Come pay your respects to the
+                products that left us too soon.
+              </p>
+              <p>Wednesday, October 28th · 7-8 PM · ILC S311</p>
+            </div>
           </div>
         </ScrollFadeIn>
       </section>

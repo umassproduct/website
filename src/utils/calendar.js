@@ -18,6 +18,66 @@ function parseEventDate(dateStr, year) {
   return `${year}${month}${day}`
 }
 
+const MEETING_END_HOUR = 20 // meetings run 7-8 PM Eastern
+const WEEKDAYS = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']
+
+function ordinal(n) {
+  const rem = n % 100
+  if (rem >= 11 && rem <= 13) return `${n}TH`
+  return n + ({ 1: 'ST', 2: 'ND', 3: 'RD' }[n % 10] || 'TH')
+}
+
+/**
+ * Returns the current date and hour in Amherst (America/New_York)
+ */
+function easternNow(now) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', hourCycle: 'h23',
+    }).formatToParts(now).map(p => [p.type, p.value])
+  )
+  return {
+    day: Date.UTC(parts.year, parts.month - 1, parts.day) / 86400000,
+    hour: Number(parts.hour),
+  }
+}
+
+/**
+ * Finds the next meeting that hasn't ended yet and labels it relative to today
+ * ("TONIGHT", "TOMORROW", "THIS WEDNESDAY", or "NEXT MEETING").
+ * Returns null when no meetings remain this semester.
+ */
+export function getNextMeeting(events, year, now = new Date()) {
+  const today = easternNow(now)
+
+  for (const event of events) {
+    const dateStr = parseEventDate(event.date, year)
+    if (!dateStr) continue
+
+    const month = Number(dateStr.slice(4, 6))
+    const dayOfMonth = Number(dateStr.slice(6, 8))
+    const eventDay = Date.UTC(year, month - 1, dayOfMonth) / 86400000
+    const daysAway = eventDay - today.day
+
+    if (daysAway < 0 || (daysAway === 0 && today.hour >= MEETING_END_HOUR)) continue
+
+    let label = 'NEXT MEETING'
+    if (daysAway === 0) label = 'TONIGHT'
+    else if (daysAway === 1) label = 'TOMORROW'
+    else if (daysAway < 7) label = `THIS ${WEEKDAYS[new Date(eventDay * 86400000).getUTCDay()]}`
+
+    return {
+      label,
+      title: event.title.toUpperCase(),
+      date: `${event.date.match(/[A-Za-z]+/)[0].toUpperCase()} ${ordinal(dayOfMonth)}`,
+      location: (event.note || 'ILC S311').toUpperCase(),
+    }
+  }
+
+  return null
+}
+
 /**
  * Generates an .ics file content from calendar events
  */

@@ -7,6 +7,7 @@ import Calendar from '../../components/Calendar/Calendar'
 import ScrollFadeIn from '../../components/ScrollFadeIn/ScrollFadeIn'
 import { slideshow as slideshowImages } from '../../../content/slideshow.json'
 import calendarData from '../../../content/calendar.json'
+import { getNextMeeting } from '../../utils/calendar'
 import './Home.css'
 
 function TypewriterHeading({ text }) {
@@ -132,13 +133,17 @@ function AlumniScroll() {
 }
 
 export default function Home() {
+  const nextMeeting = getNextMeeting(calendarData.events, calendarData.year)
+
   return (
     <div className="home">
-      <div className="home__alert">
-        <span className="home__alert-text">
-          🚨 TOMORROW: PRODUCT GRAVEYARD — OCTOBER 28TH, 7-8 PM, ILC S311
-        </span>
-      </div>
+      {nextMeeting && (
+        <div className="home__alert">
+          <span className="home__alert-text">
+            🚨 {nextMeeting.label}: {nextMeeting.title} — {nextMeeting.date}, 7-8 PM, {nextMeeting.location}
+          </span>
+        </div>
+      )}
 
       <div className="home__header">
         <TypewriterHeading text="Your role in tech starts here." />
