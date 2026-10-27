@@ -136,7 +136,7 @@ export default function Home() {
     <div className="home">
       <div className="home__alert">
         <span className="home__alert-text">
-          🚨 NEXT MEETING: TITLE TBA — OCTOBER 28TH, 7-8 PM, ILC S311
+          🚨 TOMORROW: PRODUCT GRAVEYARD — OCTOBER 28TH, 7-8 PM, ILC S311
         </span>
       </div>
 
