@@ -61,8 +61,8 @@ function PitchRow({ meeting, mi, selectedId, openPitch }) {
           {meeting.pitches.map((pitch, pi) => (
             <button
               key={pi}
-              className={`showcase__pitch-card${!pitch.youtubeId ? ' showcase__pitch-card--no-video' : ''}`}
-              onClick={() => pitch.youtubeId && openPitch(pitch, selectedId, mi, pi)}
+              className={`showcase__pitch-card${!(pitch.youtubeId || pitch.driveId) ? ' showcase__pitch-card--no-video' : ''}`}
+              onClick={() => (pitch.youtubeId || pitch.driveId) && openPitch(pitch, selectedId, mi, pi)}
               aria-label={`View pitch: ${pitch.title}`}
             >
               <div className="showcase__pitch-video-wrap">
@@ -72,6 +72,13 @@ function PitchRow({ meeting, mi, selectedId, openPitch }) {
                     alt={pitch.title}
                     className="showcase__pitch-video"
                   />
+                ) : pitch.driveId ? (
+                  <div className="showcase__pitch-video showcase__pitch-video--placeholder">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                      <path d="M12 7L25 16L12 25V7Z" fill="currentColor" />
+                    </svg>
+                    <span>Watch recording</span>
+                  </div>
                 ) : (
                   <div className="showcase__pitch-video showcase__pitch-video--placeholder">
                     <span>Recording coming soon</span>
@@ -243,7 +250,10 @@ export default function Showcase() {
             <div className="showcase__modal-video-wrap">
               <iframe
                 className="showcase__modal-video"
-                src={`https://www.youtube.com/embed/${activePitch.youtubeId}?autoplay=1&rel=0`}
+                src={activePitch.driveId
+                  ? `https://drive.google.com/file/d/${activePitch.driveId}/preview`
+                  : `https://www.youtube.com/embed/${activePitch.youtubeId}?autoplay=1&rel=0`}
+                referrerPolicy="strict-origin-when-cross-origin"
                 title={activePitch.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -274,6 +284,16 @@ export default function Showcase() {
                   </p>
                 )}
               </div>
+              {activePitch.driveId && (
+                <a
+                  className="showcase__modal-link-btn"
+                  href={`https://drive.google.com/file/d/${activePitch.driveId}/view`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open in Drive
+                </a>
+              )}
               <button className="showcase__modal-link-btn" onClick={copyLink}>
                 {copied ? 'Copied!' : 'Share'}
               </button>

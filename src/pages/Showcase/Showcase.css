@@ -261,6 +261,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   background: #0d0d0d;
   border-bottom: 1px solid rgba(136, 28, 28, 0.2);
 }
@@ -328,6 +329,7 @@
 }
 
 .showcase__modal {
+  gap: 8px;
   background: #0d0d0d;
   border: 1px solid rgba(136, 28, 28, 0.35);
   border-radius: 24px;
@@ -388,6 +390,7 @@
 
 .showcase__modal-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
@@ -395,6 +398,7 @@
 }
 
 .showcase__modal-title-wrap {
+  flex: 1 1 220px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -429,6 +433,7 @@
 }
 
 .showcase__modal-link-btn {
+  text-decoration: none;
   flex-shrink: 0;
   padding: 8px 20px;
   background: transparent;
