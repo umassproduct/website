@@ -60,7 +60,7 @@ export default function WhoWeAre() {
 
           <ScrollFadeIn>
             <p className="who-we-are__activities">
-              We meet weekly on Wednesday evenings to discuss{' '}
+              We meet every other Wednesday evening to discuss{' '}
               <span className="who-we-are__highlight who-we-are__highlight--red">trends in technology</span>,{' '}
               <span className="who-we-are__highlight who-we-are__highlight--pink">conduct product thinking seminars</span>,{' '}
               <span className="who-we-are__highlight who-we-are__highlight--gray">work on case studies</span>, and occasionally{' '}

@@ -55,7 +55,7 @@ collections:
         fields:
           - { label: Semester, name: semester, widget: select, options: ['spring', 'fall'] }
           - { label: Year, name: year, widget: number, value_type: int }
-          - { label: 'Meeting time (e.g. "every wednesday, 7-8 pm")', name: meetingInfo, widget: string }
+          - { label: 'Meeting time (e.g. "every other wednesday, 7-8 pm")', name: meetingInfo, widget: string }
           - label: Events
             name: events
             widget: list

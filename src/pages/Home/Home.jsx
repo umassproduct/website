@@ -134,13 +134,14 @@ function AlumniScroll() {
 
 export default function Home() {
   const nextMeeting = getNextMeeting(calendarData.events, calendarData.year)
+  const hasMeetingTitle = nextMeeting && !/^(?:title\s+)?tbd$/i.test(nextMeeting.title.trim())
 
   return (
     <div className="home">
       {nextMeeting && (
         <div className="home__alert">
           <span className="home__alert-text">
-            🚨 {nextMeeting.label}: {nextMeeting.title} — {nextMeeting.date}, 7-8 PM, {nextMeeting.location}
+            🚨 {nextMeeting.label}: {hasMeetingTitle && `${nextMeeting.title} — `}{nextMeeting.date}, 7-8 PM, {nextMeeting.location}
           </span>
         </div>
       )}

@@ -13,7 +13,7 @@ export default function Footer() {
           <img src="/images/logo.png" alt="UMass Product" className="footer__logo" />
           <div className="footer__socials">
             {isHome
-              ? <p className="footer__meeting">Every Wednesday, from 7–8</p>
+              ? <p className="footer__meeting">Every other Wednesday, from 7–8 PM</p>
               : <SocialLinks />
             }
           </div>
