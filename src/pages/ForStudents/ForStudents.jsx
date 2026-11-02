@@ -5,6 +5,7 @@ import SocialLinks from '../../components/SocialLinks/SocialLinks'
 import Calendar from '../../components/Calendar/Calendar'
 import ScrollFadeIn from '../../components/ScrollFadeIn/ScrollFadeIn'
 import calendarData from '../../../content/calendar.json'
+import { getNextMeeting } from '../../utils/calendar'
 import './ForStudents.css'
 
 function TypewriterHeading({ text }) {
@@ -61,6 +62,8 @@ function TypewriterHeading({ text }) {
 }
 
 export default function ForStudents() {
+  const nextMeeting = getNextMeeting(calendarData.events, calendarData.year)
+
   return (
     <div className="for-students page">
       <div className="for-students__header">
@@ -123,6 +126,7 @@ export default function ForStudents() {
               year={calendarData.year}
               events={calendarData.events}
               meetingInfo={calendarData.meetingInfo}
+              notice={calendarData.notice}
             />
           </div>
         </ScrollFadeIn>
@@ -141,21 +145,16 @@ export default function ForStudents() {
 
         <ScrollFadeIn>
           <div className="for-students__poster-container">
-            <RedBubble className="for-students__poster-bubble">
-              <img
-                className="for-students__poster"
-                src="/images/meetings/1028 - Product Graveyard.webp"
-                alt="Product Graveyard, Wednesday October 28 at 7 PM in ILC S311"
-              />
-            </RedBubble>
             <div className="for-students__poster-blurb">
-              <p>If you could resurrect one dead product, which would it be?</p>
-              <p>
-                At Product Graveyard, we look at the products that flopped, faded out, or got left
-                behind, and decide if any deserve a second life. Come pay your respects to the
-                products that left us too soon.
-              </p>
-              <p>Wednesday, October 28th · 7-8 PM · ILC S311</p>
+              {nextMeeting ? (
+                <>
+                  <p>{nextMeeting.title === 'TITLE TBD' ? 'Product meeting · Topic coming soon' : nextMeeting.title}</p>
+                  <p>{nextMeeting.date} · 7-8 PM · {nextMeeting.location}</p>
+                </>
+              ) : (
+                <p>Check back soon for our next meeting.</p>
+              )}
+              <p>{calendarData.notice}</p>
             </div>
           </div>
         </ScrollFadeIn>

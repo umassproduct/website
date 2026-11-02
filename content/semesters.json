@@ -1,6 +1,58 @@
 {
   "showcase_semesters": [
     {
+      "id": "fall_26",
+      "label": "Fall 2026",
+      "meetings": [
+        {
+          "date": "October 28th",
+          "title": "Product Graveyard",
+          "pitches": [
+            {
+              "youtubeId": null,
+              "title": "Smash2Dash",
+              "presenters": [
+                {
+                  "name": "Kyle Swett"
+                },
+                {
+                  "name": "Hayden Hour"
+                }
+              ]
+            },
+            {
+              "youtubeId": null,
+              "title": "Metaverse: Rebooted",
+              "presenters": [
+                {
+                  "name": "Austin Lio"
+                },
+                {
+                  "name": "Jimmy Savaryn",
+                  "linkedin": "https://www.linkedin.com/in/james-savaryn-7905ba356/"
+                },
+                {
+                  "name": "Ethan Chen"
+                }
+              ]
+            },
+            {
+              "youtubeId": null,
+              "title": "virtual frames (The Future of Touch)",
+              "presenters": [
+                {
+                  "name": "Ayan Zakaria"
+                },
+                {
+                  "name": "Shreyo Karar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "spring_26",
       "label": "Spring 2026",
       "meetings": [

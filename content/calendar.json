@@ -1,7 +1,7 @@
 {
   "semester": "fall",
   "year": 2026,
-  "meetingInfo": "every other wednesday, 7-8 pm",
+  "meetingInfo": "wednesdays, 7-8 pm",
   "events": [
     {
       "title": "Product 101: What's the Problem?",
@@ -25,8 +25,19 @@
     },
     {
       "title": "Title TBD",
-      "date": "November 11",
+      "date": "November 18",
+      "note": "ILC S311"
+    },
+    {
+      "title": "Title TBD",
+      "date": "December 2",
+      "note": "ILC S311"
+    },
+    {
+      "title": "Title TBD",
+      "date": "December 9",
       "note": "ILC S311"
     }
-  ]
+  ],
+  "notice": "No product meeting on November 11 (Veterans Day)."
 }

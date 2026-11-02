@@ -75,6 +75,12 @@
   margin: 0;
 }
 
+.calendar__notice {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  margin: var(--space-sm) 0 0;
+}
+
 .calendar__events {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

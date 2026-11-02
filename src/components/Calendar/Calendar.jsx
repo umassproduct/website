@@ -1,7 +1,7 @@
 import { generateICSFile, downloadICSFile } from '../../utils/calendar'
 import './Calendar.css'
 
-export default function Calendar({ semester, year, events, meetingInfo }) {
+export default function Calendar({ semester, year, events, meetingInfo, notice }) {
   const handleAddToCalendar = () => {
     const icsContent = generateICSFile(events, year, meetingInfo)
     downloadICSFile(icsContent)
@@ -14,6 +14,7 @@ export default function Calendar({ semester, year, events, meetingInfo }) {
         {meetingInfo && (
           <p className="calendar__subtitle">{meetingInfo}</p>
         )}
+        {notice && <p className="calendar__notice">{notice}</p>}
       </div>
 
       <div className="calendar__container">

@@ -176,6 +176,7 @@ export default function Home() {
             year={calendarData.year}
             events={calendarData.events}
             meetingInfo={calendarData.meetingInfo}
+            notice={calendarData.notice}
           />
         </ScrollFadeIn>
       </section>
