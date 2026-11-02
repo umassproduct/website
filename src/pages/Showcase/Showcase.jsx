@@ -66,22 +66,16 @@ function PitchRow({ meeting, mi, selectedId, openPitch }) {
               aria-label={`View pitch: ${pitch.title}`}
             >
               <div className="showcase__pitch-video-wrap">
-                {pitch.youtubeId ? (
+                {(pitch.thumbnail || pitch.youtubeId) ? (
                   <img
-                    src={`https://img.youtube.com/vi/${pitch.youtubeId}/maxresdefault.jpg`}
+                    src={pitch.thumbnail || `https://img.youtube.com/vi/${pitch.youtubeId}/maxresdefault.jpg`}
+                    loading="lazy"
                     alt={pitch.title}
                     className="showcase__pitch-video"
                   />
-                ) : pitch.driveId ? (
-                  <div className="showcase__pitch-video showcase__pitch-video--placeholder">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                      <path d="M12 7L25 16L12 25V7Z" fill="currentColor" />
-                    </svg>
-                    <span>Watch recording</span>
-                  </div>
                 ) : (
                   <div className="showcase__pitch-video showcase__pitch-video--placeholder">
-                    <span>Recording coming soon</span>
+                    <span>{pitch.driveId ? 'Watch recording' : 'Recording coming soon'}</span>
                   </div>
                 )}
               </div>

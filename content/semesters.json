@@ -19,7 +19,8 @@
                   "name": "Hayden Hour"
                 }
               ],
-              "driveId": "1-3BuVePYxEeMB5IXBqSQ2gOt1rJH1YtT"
+              "driveId": "1-3BuVePYxEeMB5IXBqSQ2gOt1rJH1YtT",
+              "thumbnail": "/images/showcase/thumbnails/IMG_8853.jpg"
             },
             {
               "youtubeId": null,
@@ -36,7 +37,8 @@
                   "name": "Ethan Chen"
                 }
               ],
-              "driveId": "1M9Pg1Nr_NVbHM36AXxJLx7ftQRw6P0nd"
+              "driveId": "1M9Pg1Nr_NVbHM36AXxJLx7ftQRw6P0nd",
+              "thumbnail": "/images/showcase/thumbnails/IMG_8854.jpg"
             },
             {
               "youtubeId": null,
@@ -49,7 +51,86 @@
                   "name": "Shreyo Karar"
                 }
               ],
-              "driveId": "1kt2Wid15ZzcdhNyEjW1w4Hg-GHormO3n"
+              "driveId": "1kt2Wid15ZzcdhNyEjW1w4Hg-GHormO3n",
+              "thumbnail": "/images/showcase/thumbnails/IMG_8855.jpg"
+            }
+          ]
+        },
+        {
+          "date": "September 16th",
+          "title": "Product 101: What's the Problem?",
+          "pitches": [
+            {
+              "title": "RFID Checkout",
+              "youtubeId": null,
+              "driveId": "1KB4yB9aosmP6bym7QsDQElPzTMu2vZEN",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7080.jpg",
+              "sourceFile": "IMG_7080.MOV"
+            },
+            {
+              "title": "Self-Checkout: Scan and Pay",
+              "youtubeId": null,
+              "driveId": "1avSp7a0YdSqTjWfwUXpGC9x1dZJMOWgI",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7081.jpg",
+              "sourceFile": "IMG_7081.MOV"
+            },
+            {
+              "title": "Chatter: Workplace Transparency",
+              "youtubeId": null,
+              "driveId": "1sYNqRmQTVkTZoSDWujzCrs6Q-UwIN7kf",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7082.jpg",
+              "sourceFile": "IMG_7082.MOV"
+            },
+            {
+              "title": "SPIRE: Course Search Redesign",
+              "youtubeId": null,
+              "driveId": "1GPsx4D1cOBGeP-hAvEd7ojdvm37jDgLT",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7083.jpg",
+              "sourceFile": "IMG_7083.MOV"
+            },
+            {
+              "title": "SPIRE: Guided Onboarding",
+              "youtubeId": null,
+              "driveId": "1AUX7oFK1TQvdeGK2r8a0CkHvg5ODZeI_",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7084.jpg",
+              "sourceFile": "IMG_7084.MOV"
+            },
+            {
+              "title": "SPIRE: Class and Schedule Builder",
+              "youtubeId": null,
+              "driveId": "1ocKLfTurhPNZNXjvf10H14rF4A93Cbuf",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/IMG_7085.jpg",
+              "sourceFile": "IMG_7085.MOV"
+            },
+            {
+              "title": "Meeting Clip 1",
+              "youtubeId": null,
+              "driveId": "1ZbEwKC5z1ac7ncsLIQi-ZMgQmIUuTnHe",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/20260916_191802.jpg",
+              "sourceFile": "20260916_191802.mp4"
+            },
+            {
+              "title": "Meeting Clip 2",
+              "youtubeId": null,
+              "driveId": "1Tv1gfJSezQNyy_-10A3XnhBHVUdz7smO",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/20260916_191817.jpg",
+              "sourceFile": "20260916_191817.mp4"
+            },
+            {
+              "title": "Meeting Clip 3",
+              "youtubeId": null,
+              "driveId": "1fJ1WGJFle7flJ3QRvAaOqe-ECOgWRSNG",
+              "presenters": [],
+              "thumbnail": "/images/showcase/thumbnails/20260916_191834.jpg",
+              "sourceFile": "20260916_191834.mp4"
             }
           ]
         }
@@ -79,7 +160,9 @@
                   "name": "Omer Saeed",
                   "linkedin": "https://www.linkedin.com/in/omersaeed00/"
                 }
-              ]
+              ],
+              "driveId": "1mF0c00gXMomxTMidkdJKQtu3CW8BeGmv",
+              "thumbnail": "/images/showcase/thumbnails/studysync.jpg"
             },
             {
               "youtubeId": null,
@@ -96,7 +179,9 @@
                 {
                   "name": "Devansh Mamoria"
                 }
-              ]
+              ],
+              "driveId": "1FA9fGYu2vm87uJLfy8Lh1XFte-J-jGQk",
+              "thumbnail": "/images/showcase/thumbnails/scoolpool.jpg"
             },
             {
               "youtubeId": null,
@@ -114,7 +199,9 @@
                   "name": "Kaushik Parthasarathy",
                   "linkedin": "https://www.linkedin.com/in/kaushikparthasarathy/"
                 }
-              ]
+              ],
+              "driveId": "1-73tQi9gq-24yfry3xfLNe_qoqxsL9Uw",
+              "thumbnail": "/images/showcase/thumbnails/roomsync.jpg"
             },
             {
               "youtubeId": null,
@@ -132,7 +219,9 @@
                   "name": "Paritosh Gandhi",
                   "linkedin": "https://www.linkedin.com/in/paritosh-gandhi-6b3675335/"
                 }
-              ]
+              ],
+              "driveId": "1mWScIdzbQNm-MyrIbB0_CLCN0zQJtuD3",
+              "thumbnail": "/images/showcase/thumbnails/getout.jpg"
             },
             {
               "youtubeId": null,
@@ -150,7 +239,9 @@
                   "name": "Anish Makam",
                   "linkedin": "https://www.linkedin.com/in/anish-makam-924aa7247/"
                 }
-              ]
+              ],
+              "driveId": "1jC4spdi4Je9NY7cWgSgghW9h1aICFBHS",
+              "thumbnail": "/images/showcase/thumbnails/taskly.jpg"
             }
           ]
         },

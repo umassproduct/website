@@ -93,7 +93,10 @@ collections:
                     label_singular: Pitch
                     summary: '{{fields.title}}'
                     fields:
-                      - { label: YouTube video ID, name: youtubeId, widget: string, required: false, hint: 'The part after v= in the YouTube URL. Leave blank for "recording coming soon".' }
+                      - { label: YouTube video ID, name: youtubeId, widget: string, required: false, hint: 'The part after v= in the YouTube URL. Use this or a Google Drive file ID; leave both blank for "recording coming soon".' }
+                      - { label: Google Drive file ID, name: driveId, widget: string, required: false, hint: 'The ID between /d/ and /view in the Drive file link.' }
+                      - { label: Thumbnail, name: thumbnail, widget: image, required: false }
+                      - { label: Original filename, name: sourceFile, widget: string, required: false }
                       - { label: Pitch title, name: title, widget: string }
                       - label: Presenters
                         name: presenters
