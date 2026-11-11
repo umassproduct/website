@@ -18,6 +18,7 @@ function parseEventDate(dateStr, year) {
   return `${year}${month}${day}`
 }
 
+const DEFAULT_MEETING_LOCATION = 'ILC S311'
 const MEETING_END_HOUR = 20 // meetings run 7-8 PM Eastern
 const WEEKDAYS = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']
 
@@ -71,7 +72,7 @@ export function getNextMeeting(events, year, now = new Date()) {
       label,
       title: event.title.toUpperCase(),
       date: `${event.date.match(/[A-Za-z]+/)[0].toUpperCase()} ${ordinal(dayOfMonth)}`,
-      location: (event.note || 'ILC S311').toUpperCase(),
+      location: (event.note || DEFAULT_MEETING_LOCATION).toUpperCase(),
     }
   }
 
@@ -111,9 +112,9 @@ export function generateICSFile(events, year, meetingTime = '7-8 pm') {
       `DTSTAMP:${timestamp}`,
       `DTSTART:${dateStr}T${startTime}`,
       `DTEND:${dateStr}T${endTime}`,
-      `SUMMARY:${event.title}`,
+      `SUMMARY:${event.title.replaceAll(',', '\\,')}`,
       `DESCRIPTION:${description}`,
-      'LOCATION:ILC S311',
+      `LOCATION:${(event.note || DEFAULT_MEETING_LOCATION).replaceAll(',', '\\,')}`,
       'STATUS:CONFIRMED',
       'END:VEVENT'
     )

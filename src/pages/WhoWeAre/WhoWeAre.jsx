@@ -3,6 +3,8 @@ import SectionHeadline from '../../components/SectionHeadline/SectionHeadline'
 import RedBubble from '../../components/RedBubble/RedBubble'
 import ScrollFadeIn from '../../components/ScrollFadeIn/ScrollFadeIn'
 import { eboard as eboardData } from '../../../content/eboard.json'
+import calendarData from '../../../content/calendar.json'
+import { getNextMeeting } from '../../utils/calendar'
 import './WhoWeAre.css'
 
 const semesters = eboardData.map(e => e.semester)
@@ -13,6 +15,7 @@ export default function WhoWeAre() {
   const [displayed, setDisplayed] = useState(semesters[0])
   const [fading, setFading] = useState(false)
   const [open, setOpen] = useState(false)
+  const nextMeeting = getNextMeeting(calendarData.events, calendarData.year)
 
   function handleSelect(s) {
     if (s === selected) { setOpen(false); return }
@@ -36,7 +39,10 @@ export default function WhoWeAre() {
           <ScrollFadeIn>
             <p className="who-we-are__meetings">
               <span className="who-we-are__meetings-label">Meetings:</span>{' '}
-              <span className="who-we-are__meetings-time">Every other Wednesday 7-8 PM · ILC S311</span>
+              <span className="who-we-are__meetings-time">
+                Every other Wednesday 7-8 PM
+                {nextMeeting && ` · Next meeting location: ${nextMeeting.location}`}
+              </span>
             </p>
           </ScrollFadeIn>
 
