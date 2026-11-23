@@ -65,6 +65,7 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: Date, name: date, widget: string, hint: 'e.g. "April 15" — free text, not a date picker' }
               - { label: Note, name: note, widget: string, required: false, hint: 'e.g. "with swag!"' }
+              - { label: Description, name: description, widget: string, required: false }
 
       - name: showcase_semesters
         label: Product Showcase

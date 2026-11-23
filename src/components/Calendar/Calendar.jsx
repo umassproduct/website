@@ -35,6 +35,9 @@ export default function Calendar({ semester, year, events, meetingInfo, notice }
                   {event.date}
                   {event.note && <span className="calendar__event-note"> {event.note}</span>}
                 </p>
+                {event.description && (
+                  <p className="calendar__event-description">{event.description}</p>
+                )}
               </div>
             </div>
           ))}

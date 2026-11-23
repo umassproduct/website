@@ -119,11 +119,16 @@
   text-overflow: ellipsis;
 }
 
-.calendar__event-date {
+.calendar__event-date,
+.calendar__event-description {
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin: 0;
   line-height: 1.4;
+}
+
+.calendar__event-description {
+  margin-top: var(--space-xs);
 }
 
 .calendar__event-note {
@@ -148,7 +153,8 @@
     white-space: normal;
   }
 
-  .calendar__event-date {
+  .calendar__event-date,
+  .calendar__event-description {
     font-size: 0.75rem;
   }
 

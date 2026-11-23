@@ -1,7 +1,7 @@
 {
   "semester": "fall",
   "year": 2026,
-  "meetingInfo": "every other wednesday, 7-8 pm",
+  "meetingInfo": "select wednesdays, 7-8 pm",
   "events": [
     {
       "title": "Product 101: What's the Problem?",
@@ -29,12 +29,13 @@
       "note": "N111"
     },
     {
-      "title": "Title TBD",
+      "title": "Product Jeopardy",
       "date": "December 2",
-      "note": "ILC S311"
+      "note": "ILC S311",
+      "description": "The winning team gets up to $100 in Amazon gift cards."
     },
     {
-      "title": "Title TBD",
+      "title": "Product Party",
       "date": "December 9",
       "note": "ILC S311"
     }

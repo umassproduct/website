@@ -104,7 +104,10 @@ export function generateICSFile(events, year, meetingTime = '7-8 pm') {
     const dateStr = parseEventDate(event.date, year)
     if (!dateStr) return
 
-    const description = event.note ? `${event.note}\\n\\nMeetings: ${meetingTime}` : `Meetings: ${meetingTime}`
+    const description = [event.description, event.note, `Meetings: ${meetingTime}`]
+      .filter(Boolean)
+      .map(text => text.replaceAll('\\', '\\\\').replaceAll('\n', '\\n').replaceAll(',', '\\,').replaceAll(';', '\\;'))
+      .join('\\n\\n\r\n ')
 
     icsContent.push(
       'BEGIN:VEVENT',
